@@ -1,0 +1,13 @@
+\setbeamertemplate{headline}{}
+
+\setbeamertemplate{frametitle} {
+    \vspace{2.3mm}
+    \hspace*{-7.3mm}
+    \begin{tikzpicture}
+        \node[minimum width = 9cm,minimum height=1.5cm] (rect) at (current page.north west) {{\textcolor{BlueIASS}\insertframetitle}};
+        \node at ([shift={(-5:6)}]rect) {\includegraphics[height=1.5cm, width=1.89cm]{\logoimagepath}};
+        \node at ([shift={(11:-4.7)}]rect) (A) {};
+        \node at ([shift={(10,0)}]A) (B) {};
+        \draw[-, thick, BlueIASS] (A.center) to (B.center);
+    \end{tikzpicture}
+}

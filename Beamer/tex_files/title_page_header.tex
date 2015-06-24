@@ -1,0 +1,11 @@
+\setbeamertemplate{headline} {%header for titlepage - done
+    \vspace{2mm}
+    \hspace{4mm}
+    \begin{tikzpicture}
+        \node at (current page.north west) (pic) {\includegraphics[height=1.5cm, width=9cm]{../Pictures/Header_first_page}};
+        \node at ([shift={(-5:6)}]pic) {\includegraphics[height=1.5cm, width=1.9cm]{\logoimagepath}};
+        \node at ([shift={(11:-4.7)}]pic) (A) {};
+        \node at ([shift={(10,0)}]A) (B) {};
+        \draw[-, thick, BlueIASS] (A.center) to (B.center);
+    \end{tikzpicture}
+}

@@ -1,0 +1,23 @@
+\setbeamertemplate{footline} { 
+    \hspace{3mm}
+    \begin{tikzpicture}
+        \node (A) {};
+        \node at ([shift={(12,0)}]A) (B) {};
+        \draw[-, BlueIASS] (A.center) to (B.center);
+    \end{tikzpicture}
+
+    \leavevmode
+    \hspace{4mm}
+    \hbox{
+        \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,left]{}
+            \textcolor{GreyIASS}{\Institute} 
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,center]{}
+            \textcolor{GreyIASS}{\footertitle} 
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,center]{}
+            \textcolor{GreyIASS}{\insertframenumber}
+        \end{beamercolorbox}
+    }
+    \vskip 10pt
+}

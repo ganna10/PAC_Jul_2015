@@ -1,0 +1,44 @@
+\documentclass[center]{beamer}
+% Jane Coates July 2013: Beamer template for IASS Presentation
+% add pdf properties, presentation title, author in tex_files/preamble.tex
+
+\input{tex_files/preamble.tex}
+\input{tex_files/footer.tex}
+
+\begin{document}
+
+\input{tex_files/title_page_header.tex}
+
+\begin{frame} %title page
+    \vspace{3cm}
+    {\Large \textcolor{\highlightcolor}{\textbf{\slidesettitle}}}\\ 
+    \vspace{1cm}
+    {\Large \textcolor{GreyIASS}{\textbf{\authorname}}} \\
+    \vspace{.5cm}
+    {\large \textcolor{GreyIASS}{1st July 2015}} 
+\end{frame}
+
+\input{tex_files/headers_non_title_page.tex}
+
+%\section{Introduction and Motivation}
+%\input{tex_files/Introduction}
+
+\section{Previous Meeting Re-cap}
+\input{tex_files/Re-cap}
+
+\section{Comparison of \ce{O3} Production in Chemical Mechanisms}
+\input{tex_files/Mechanisms}
+
+\section{Impact of Solvent Speciations on \ce{O3}}
+\input{tex_files/Solvents}
+
+\section{Sensitivity of \ce{O3} Production on Modelled Conditions}
+\input{tex_files/Sensitivity}
+
+\section{Timeline}
+\input{tex_files/Timeline}
+
+%\appendix
+%\input{tex_files/Extra} 
+
+\end{document}

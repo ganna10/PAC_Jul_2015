@@ -1,0 +1,79 @@
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png, .jpg, .pdf}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{todonotes}
+\usepackage{xifthen}
+\usepackage{tikz}
+\usepackage[version=3]{mhchem}
+\usepackage{chemarrow}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{appendixnumberbeamer}
+\usepackage{chemfig}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{minibox}
+\usepackage{bbding}
+\setstretch{1.2}
+\usetikzlibrary{arrows, positioning, decorations.pathreplacing, decorations.markings, shapes}
+
+\newcolumntype{P}[1]{>{\raggedright\let\newline\\\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\raggedright\arraybackslash}m{#1}}
+
+\graphicspath{{../Pictures/}}
+\hypersetup{pdfauthor = {Jane Coates},
+		    pdftitle = {2015 PhD Advisory Committee Meeting},	
+		    pdfsubject = {2015 PhD Advisory Committee Meeting},
+            pdfkeywords = {Meeting, PhD updates, TOPP, Mechanism comparison, Solvents work, Thesis, tagging},
+		    pdfcreator = {Latex with hyperref},
+		    pdfcreator = {pdflatex}}
+
+\setbeamertemplate{navigation symbols}{}
+
+\definecolor{BlueIASS}{RGB}{0,59,129}
+\definecolor{GreyIASS}{RGB}{158,162,163}
+\setlength{\fboxrule}{2pt}
+
+\newcommand{\cemph}[1]{\textcolor{\highlightcolor}{#1}}
+\newcommand{\logoimagepath}{../Pictures/iass_logo}
+\newcommand{\highlightcolor}{BlueIASS}
+\newcommand{\Title}{Institute for Advanced Sustainability Studies \\ IASS in Potsdam}
+\newcommand{\authorname}{Jane Coates}
+\newcommand{\slidesettitle}{Tropospheric Ozone Production Pathways\\\vspace{2mm}with Detailed Chemical Mechanisms}
+\newcommand{\Institute}{Institute for Advanced Sustainability Studies e.V.}
+\setbeamercolor{description item}{fg=BlueIASS}
+\setbeamercolor{itemize item}{fg=BlueIASS}
+\setbeamercolor{itemize subitem}{fg=BlueIASS}
+\setbeamercolor{section in toc}{fg=BlueIASS}
+\setbeamerfont{section in toc}{size = \large}
+\newcommand{\footertitle}{PhD Advisory Committee Meeting}
+\setbeamercolor{alerted text}{fg=BlueIASS}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+\newlength{\Alen}
+\newlength{\minAlen}
+\newcommand{\reaction}[1][\mbox{}]{\ensuremath{
+  \settowidth{\minAlen}{\ensuremath{\rarrowfill{2.5em}}}
+  \settowidth{\Alen}{\ensuremath{\mathrm{^{#1}}}}\addtolength{\Alen}{0.7em}
+  \ifthenelse{\lengthtest{\Alen <\minAlen}}{\setlength{\Alen}{\minAlen}}{}
+  \stackrel{\mathrm{#1}}{\hbox to\Alen{\rightarrowfill}}
+}}
+	  
+\newcommand{\reactionrev}[1][\mbox{}]{\ensuremath{\rightleftharpoonsfill{2.5em}}}
+	  
+\newenvironment{reactionlist}
+	{\begin{center}\begin{tabular}{lcl}}
+	{\end{tabular}\end{center}}
+\newcounter{reaction}
+\newcommand{\reactionitem}[3][\mbox{}]
+	{#2&\reaction[#1]&#3 \\ [0.5ex] }
+	  
+\newcommand{\reactionitemrev}[3][\mbox{}]
+	  {#2&\reactionrev[#1]&#3 \\ [0.5ex]}
