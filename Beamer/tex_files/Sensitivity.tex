@@ -13,13 +13,27 @@
 \end{frame}
 
 \begin{frame}
+    \frametitle{Boxmodel Setup for Mechanism Comparison}
+
+    \vspace{-0.5cm}
+    \begin{itemize}
+        \item MECCA boxmodel over 7 days. \vspace{2mm}
+        \item Initial NMVOC typical of Los Angeles. \vspace{2mm}
+        \item Tagging follows organic products from VOC degradation \\ \hspace{2mm}$\Rightarrow$ effects on \ce{O3} production inferred from \ce{O_x} production. \vspace{2mm}
+        \item NO source tuned for maximum \ce{O3} production. \vspace{2mm}
+        \item Constant PBL height of 1 km \\ \hspace{2mm}$\Rightarrow$ no dilution or vertical mixing. \vspace{2mm}
+        \item Constant temperature of 293 K.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
     \frametitle{1. Tagging Approach}
 
+    \vspace{-5mm}
     \begin{itemize}
-        \item VOC tagging approach implemented in global model by Shuai and Tim.
-        \item Allows allocation of \ce{O3} mixing ratios to source rather than comparing \ce{O_x} production.
+        \item VOC tagging approach implemented in global model by Shuai and Tim. \vspace{3mm}
+        \item Allows allocation of \ce{O3} mixing ratios to source rather than comparing \ce{O_x} production. \vspace{3mm}
         \item Tagged MOZART-4 mechanism that was implemented in boxmodel for mechanism comparison study.
-        \item Same boxmodel set-up as in mechanism comparison study.
     \end{itemize}
 \end{frame}
 
@@ -50,11 +64,11 @@
 \begin{frame}
     \frametitle{2. Low and High \ce{NO_x} Conditions}
 
+    \vspace{-5mm}
     \begin{itemize}
-        \item Modelling rural (low) and polluted urban (high) \ce{NO_x} conditions.
-        \item MOZART-4 mechanism with VOC tagging approach.
-        \item Same VOC emissions and boxmodel set-up as in mechanism comparison study.
-        \item NO emissions calculated for maximum \ce{O3} production scaled by
+        \item Modelling rural and polluted urban conditions. \vspace{5mm}
+        \item MOZART-4 mechanism with VOC tagging approach. \vspace{5mm}
+        \item NO emissions calculated for maximum \ce{O3} production scaled 
             \begin{itemize}
                 \item 0.5 for Low \ce{NO_x}
                 \item 1.5 for High \ce{NO_x}
@@ -81,12 +95,12 @@
 \begin{frame}
     \frametitle{3. Vertical Mixing}
 
+    \vspace{-5mm}
     \begin{itemize}
-        \item Same boxmodel set-up as VOC tagging approach.
+        \item Included diurnal cycle for PBL height from CARES measurement campaign. \vspace{3mm}
+        \item Vertical mixing with free troposphere approach from Sandra Louren's thesis. \vspace{3mm}
+        \item Free troposphere mixing ratios for \ce{O3} and CO from MATCH-MPIC model. \vspace{3mm}
         \item Initial VOC are kept constant till noon of the first day.
-        \item Included diurnal cycle for PBL height.
-        \item Vertical mixing with free troposphere approach as in Sandra Louren's thesis.
-        \item Free troposphere mixing ratios for \ce{O3} and CO from MATCH-MPIC model.
     \end{itemize}
 \end{frame}
 
@@ -98,24 +112,24 @@
     \end{frame}
 }
 
+%\begin{frame}
+%    \frametitle{4. Horizontal Mixing}
+%
+%    \begin{itemize}
+%        \item Same boxmodel set-up as VOC tagging approach.
+%        \item Implement horizontal mixing approach as in Sandra Louren's thesis.
+%        \item ??? what is the modelling case?
+%    \end{itemize}
+%\end{frame}
+
 \begin{frame}
-    \frametitle{4. Horizontal Mixing}
+    \frametitle{4. Temperature}
 
+    \vspace{-5mm}
     \begin{itemize}
-        \item Same boxmodel set-up as VOC tagging approach.
-        \item Implement horizontal mixing approach as in Sandra Louren's thesis.
-        \item ??? what is the modelling case?
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{5. Temperature}
-
-    \begin{itemize}
-        \item Current boxmodel setup uses constant temperature (293 K).
-        \item Run boxmodel at 295 K, future scenario of a warmer climate.
-        \item Compare \ce{O3} between lower and higher temperatures.
-        \item Based on recent review by Pusede et al., temperature impacts \ce{O3} production through chemistry of alkyl nitrates (RONO2) and peroxy nitrates (RO2NO2).
-        \item See which chemical mechanisms reflect the temperature dependance of this chemistry and its effect on \ce{O3}.
+        \item Run boxmodel at 295 K, scenario of a warmer climate. \vspace{3mm}
+        \item Compare \ce{O3} between lower and higher temperatures. \vspace{3mm}
+        \item According to recent review by Pusede et al., temperature dependent chemistry of alkyl nitrates impacts \ce{O3} production. \vspace{3mm}
+        \item Assess how this chemistry is represented in the chemical mechanisms used in comparison study. 
     \end{itemize}
 \end{frame}
