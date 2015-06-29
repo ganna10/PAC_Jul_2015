@@ -4,24 +4,23 @@
 \end{frame} 
 
 \begin{frame}
-    \frametitle{Main Research Question} 
-
-    \vspace{-0.7cm}
-    \begin{center}
-        \LARGE{How sensitive are \ce{O3} concentrations to non-chemical variables?}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Boxmodel Setup for Mechanism Comparison}
+    \frametitle{Original Boxmodel Setup}
 
     \vspace{-0.5cm}
     \begin{itemize}
-        \item MECCA boxmodel over 7 days. \vspace{2mm}
-        \item Initial NMVOC typical of Los Angeles. \vspace{2mm}
-        \item Tagging follows organic products from VOC degradation \\ \hspace{2mm}$\Rightarrow$ effects on \ce{O3} production inferred from \ce{O_x} production. \vspace{2mm}
-        \item NO source tuned for maximum \ce{O3} production. \vspace{2mm}
-        \item Constant PBL height of 1 km \\ \hspace{2mm}$\Rightarrow$ no dilution or vertical mixing. \vspace{2mm}
+        \item MECCA boxmodel over 7 days. \vspace{6mm}
+        \item Initial NMVOC typical of Los Angeles. \vspace{6mm}
+        \item NO source tuned for maximum \ce{O3} production. 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Original Boxmodel Setup (cont.)}
+
+    \vspace{-5mm}
+    \begin{itemize}
+        \item Tagging follows organic products from VOC degradation \\ \hspace{2mm}$\Rightarrow$ effects on \ce{O3} production inferred from \ce{O_x} production. \vspace{4mm}
+        \item Constant PBL height of 1 km \\ \hspace{2mm}$\Rightarrow$ no dilution or vertical mixing. \vspace{4mm}
         \item Constant temperature of 293 K.
     \end{itemize}
 \end{frame}
@@ -31,7 +30,7 @@
 
     \vspace{-5mm}
     \begin{itemize}
-        \item VOC tagging approach implemented in global model by Shuai and Tim. \vspace{3mm}
+        \item VOC tagging approach implemented in global model \\ by Shuai and Tim. \vspace{3mm}
         \item Allows allocation of \ce{O3} mixing ratios to source rather than comparing \ce{O_x} production. \vspace{3mm}
         \item Tagged MOZART-4 mechanism that was implemented in boxmodel for mechanism comparison study.
     \end{itemize}
@@ -97,12 +96,19 @@
 
     \vspace{-5mm}
     \begin{itemize}
-        \item Included diurnal cycle for PBL height from CARES measurement campaign. \vspace{3mm}
-        \item Vertical mixing with free troposphere approach from Sandra Louren's thesis. \vspace{3mm}
-        \item Free troposphere mixing ratios for \ce{O3} and CO from MATCH-MPIC model. \vspace{3mm}
-        \item Initial VOC are kept constant till noon of the first day.
+        \item Included diurnal cycle for PBL height from CARES measurement campaign. \vspace{5mm}
+        \item Vertical mixing with free troposphere approach from \\ Sandra Louren's thesis. \vspace{5mm}
+        \item Free troposphere mixing ratios for \ce{O3} and CO from MATCH-MPIC model. 
     \end{itemize}
 \end{frame}
+
+{
+    \usebackgroundtemplate{%
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=0.98\paperheight, width = 0.98\paperwidth]{../Plotting_scripts/CH4_comparison_vertical_mixing}\hfil}\vfil}
+    }
+    \begin{frame}[plain]
+    \end{frame}
+}
 
 {
     \usebackgroundtemplate{%
